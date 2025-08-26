@@ -1,3 +1,98 @@
+/* Reset en basis styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  padding: 20px 15px;
+  border-bottom: 1px solid #34495e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-header h3 {
+  color: #ecf0f1;
+  font-size: 18px;
+  margin: 0;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #ecf0f1;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 15px 20px;
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding-left: 30px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Bar */
+.top-bar {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.top-bar h1 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin: 0;
+}
+
+.user-info {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* Content Area */
+.content-area {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
 /* App Container */
 .app-container {
   display: flex;

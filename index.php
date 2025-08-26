@@ -1,3 +1,4 @@
+<?php include_once 'public/includes/head.php'; ?>
 <body>
   <div class="app-container">
     <!-- Sidebar -->
@@ -18,7 +19,7 @@
     <main class="main-content">
       <header class="top-bar">
         <h1>Dashboard</h1>
-        <div class="user-info">Welkom, [Gebruiker]</div>
+        <div class="user-info">Welkom</div>
       </header>
       
       <div class="content-area">
@@ -26,4 +27,4 @@
       </div>
     </main>
   </div>
-</body>
+<?php include_once 'public/includes/footer.php'; ?>
