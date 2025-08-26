@@ -10,7 +10,18 @@
     <title><?php echo isset($pageTitle) ? $pageTitle . ' - EventPlanner' : 'EventPlanner'; ?></title>
     
     <!-- CSS Files -->
-    <link rel="stylesheet" href="public/css/style.css">
+    <?php
+    // Slimme CSS pad detectie
+    $currentPath = $_SERVER['REQUEST_URI'];
+    if (strpos($currentPath, '/public/pages/') !== false) {
+        // We zitten in de pages map (login.php, register.php, etc.)
+        $cssPath = '../css/style.css';
+    } else {
+        // We zitten in de root (index.php)
+        $cssPath = 'public/css/style.css';
+    }
+    ?>
+    <link rel="stylesheet" href="<?php echo $cssPath; ?>">
 
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
